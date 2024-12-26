@@ -1,6 +1,6 @@
 # Proxima the Goat Bot 🐐✨
 
-![Proxima the Goat Bot]
+ **[Proxima the Goat Bot]**
 
 **Proxima** is a powerful and multi-functional bot designed to help with group management, fun interactions, and a variety of utility commands. Whether you’re running a small community or managing a large group, Proxima is here to make your life easier by providing a wide range of features to enhance your chat experience.
 
