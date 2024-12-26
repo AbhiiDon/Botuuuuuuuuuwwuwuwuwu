@@ -50,7 +50,7 @@
     "tinyurl": "^1.1.7",
     "totp-generator": "^0.0.13",
     "websocket-stream": "^5.5.2",
-    "gtts": "^2.0.5"
+    "gtts": "^2.0.4"  // Updated to available version
   },
   "scripts": {
     "start": "set NODE_ENV=&& node index.js",
