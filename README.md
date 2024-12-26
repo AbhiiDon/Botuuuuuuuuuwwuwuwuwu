@@ -6,49 +6,66 @@
     <title>Proxima the Goat Bot</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #1d1f27;
+            color: #e0e0e0;
+            overflow-x: hidden;
         }
         header {
-            background: #ffcc00;
+            background: linear-gradient(135deg, #ffcc00, #ff6600);
             color: white;
-            padding: 20px;
+            padding: 40px;
             text-align: center;
-            font-size: 2em;
+            font-size: 2.5em;
+            box-shadow: 0 0 20px rgba(255, 204, 0, 0.8);
         }
         header img {
-            width: 100px;
+            width: 120px;
             margin-top: 10px;
-            animation: bounce 1.5s infinite;
+            animation: glow 1.5s ease-in-out infinite alternate;
         }
         .content {
             margin: 20px;
             padding: 20px;
         }
         .feature, .command {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: opacity 1s, transform 1s;
             margin: 10px 0;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
-        .feature.visible, .command.visible {
-            opacity: 1;
-            transform: translateY(0);
+        .feature:hover, .command:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
         }
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
+        .feature {
+            font-size: 1.2em;
+            color: #ffcc00;
+        }
+        .command {
+            font-size: 1.1em;
+            color: #66ccff;
         }
         h2 {
-            font-size: 1.8em;
-            margin-top: 20px;
+            font-size: 2em;
+            margin-top: 30px;
+            color: #ff6600;
+        }
+        /* Glowing Effect */
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 15px #ff6600, 0 0 20px #ff6600;
+            }
+            50% {
+                text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ff6600, 0 0 40px #ff6600;
+            }
+            100% {
+                text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 15px #ff6600, 0 0 20px #ff6600;
+            }
         }
     </style>
 </head>
@@ -83,24 +100,6 @@
     <div class="command">Have questions or want to contribute? Feel free to reach out to the creator!</div>
     <div class="command">Email: **aayusha@example.com**</div>
 </div>
-
-<script>
-    // Create an IntersectionObserver to trigger animation when the element is in the viewport
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Stop observing after the animation is triggered
-            }
-        });
-    }, { threshold: 0.5 }); // Trigger when the element is 50% visible
-
-    // Observe each feature and command element
-    const elements = document.querySelectorAll('.feature, .command');
-    elements.forEach(element => {
-        observer.observe(element);
-    });
-</script>
 
 </body>
 </html>
