@@ -5,101 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proxima the Goat Bot</title>
     <style>
+        /* General Body Styling */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1d1f27;
-            color: #e0e0e0;
+            background-color: #1e1e2f;
+            color: #d1d3d8;
+            line-height: 1.6;
             overflow-x: hidden;
         }
+        
+        /* Header Section */
         header {
-            background: linear-gradient(135deg, #ffcc00, #ff6600);
+            background: #ffb84d;
             color: white;
-            padding: 40px;
             text-align: center;
-            font-size: 2.5em;
-            box-shadow: 0 0 20px rgba(255, 204, 0, 0.8);
+            padding: 40px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         header img {
             width: 120px;
-            margin-top: 10px;
-            animation: glow 1.5s ease-in-out infinite alternate;
+            margin-top: 15px;
+            border-radius: 50%;
         }
+
+        /* Main Content Styling */
         .content {
-            margin: 20px;
-            padding: 20px;
+            margin: 30px 20px;
         }
-        .feature, .command {
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 8px;
-            background-color: rgba(255, 255, 255, 0.1);
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .feature:hover, .command:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
-        }
-        .feature {
-            font-size: 1.2em;
-            color: #ffcc00;
-        }
-        .command {
-            font-size: 1.1em;
-            color: #66ccff;
-        }
+
         h2 {
             font-size: 2em;
-            margin-top: 30px;
-            color: #ff6600;
+            color: #ffcc00;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 40px;
         }
-        /* Glowing Effect */
-        @keyframes glow {
-            0% {
-                text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 15px #ff6600, 0 0 20px #ff6600;
-            }
-            50% {
-                text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ff6600, 0 0 40px #ff6600;
-            }
-            100% {
-                text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 15px #ff6600, 0 0 20px #ff6600;
-            }
+
+        p {
+            font-size: 1.1em;
+            margin: 15px 0;
+            text-align: justify;
+        }
+
+        .feature, .command {
+            background-color: #2e2e42;
+            border-radius: 8px;
+            margin: 15px 0;
+            padding: 15px;
+            font-size: 1.2em;
+            color: #f3f3f3;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .feature h3, .command h3 {
+            color: #ffcc00;
+            font-size: 1.3em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .feature p, .command p {
+            font-size: 1.1em;
+        }
+
+        /* Button Styling */
+        .btn {
+            background-color: #ffcc00;
+            color: #1e1e2f;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #ffb84d;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #1e1e2f;
+            color: #d1d3d8;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.1em;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <div>Proxima the Goat Bot 🐐✨</div>
+    <h1>Proxima the Goat Bot 🐐✨</h1>
     <img src="https://i.imgur.com/abc123.jpg" alt="Proxima the Goat Bot">
 </header>
 
 <div class="content">
     <h2>Features 🎉</h2>
-    <div class="feature">🐐 **Antispam**: Proxima can help keep your group free from spammers! 🚫</div>
-    <div class="feature">💻 **Shell Commands**: Execute terminal commands right from your chat! 🖥️</div>
-    <div class="feature">🎈 **Fun Interactions**: Chat with Proxima and enjoy some goat-tastic vibes! 🐐🎉</div>
-    <div class="feature">🛠️ **Utility Commands**: Get quick and easy help with various commands for your server or group. ⚙️</div>
+    <div class="feature">
+        <h3>🐐 Antispam</h3>
+        <p>Proxima helps you keep your chat clean by automatically detecting spammy behavior and taking action such as warning or kicking the user.</p>
+    </div>
+    <div class="feature">
+        <h3>💻 Shell Commands</h3>
+        <p>With Proxima, you can execute shell commands directly from the chat! It's simple and easy to use for system admins and power users.</p>
+    </div>
+    <div class="feature">
+        <h3>🎈 Fun Interactions</h3>
+        <p>Proxima isn't just useful—it's fun! Enjoy chatting with Proxima and experience unique interactions that bring a smile to your face.</p>
+    </div>
+    <div class="feature">
+        <h3>🛠️ Utility Commands</h3>
+        <p>Proxima provides a variety of commands to assist with tasks such as managing your group, providing system information, and more.</p>
+    </div>
 
     <h2>How to Use Proxima 🧑‍💻</h2>
-    <div class="command">1. **Install** Proxima with the `#cmd install` command.</div>
-    <div class="command">2. Use the bot's various features, like `$`, `> shell` to run terminal commands.</div>
-    <div class="command">3. Proxima will help you manage spam and other tasks with ease!</div>
+    <div class="command">
+        <h3>Step 1: Install Proxima</h3>
+        <p>To install Proxima, simply use the command <code>#cmd install proxima</code> in your bot interface.</p>
+    </div>
+    <div class="command">
+        <h3>Step 2: Use the Features</h3>
+        <p>Once installed, you can start using features like the antispam filter, shell commands, and more. Check the documentation for each command.</p>
+    </div>
+    <div class="command">
+        <h3>Step 3: Keep the Conversation Clean</h3>
+        <p>Proxima will automatically handle spam, making your group chats more enjoyable and less chaotic.</p>
+    </div>
 
     <h2>Commands 📜</h2>
-    <div class="command">- **Shell Commands**: Use `>`, `$`, or `shell` to run terminal commands.</div>
-    <div class="command">- **Antispam**: Proxima can automatically warn and kick users who spam in your group.</div>
-    <div class="command">- **Help**: Type `{pn} help` to get the list of available commands.</div>
+    <div class="command">
+        <h3>Shell Command</h3>
+        <p>Use the <code>$</code> or <code>></code> command followed by your terminal command to execute actions directly from the chat.</p>
+    </div>
+    <div class="command">
+        <h3>Antispam Command</h3>
+        <p>Proxima automatically detects spammy behavior and can warn or kick users depending on your settings.</p>
+    </div>
+    <div class="command">
+        <h3>Help Command</h3>
+        <p>Use <code>{pn} help</code> to see the list of all available commands and their usage.</p>
+    </div>
 
-    <h2>License 🔑</h2>
-    <div class="command">This project is licensed under the MIT License - see the LICENSE file for details.</div>
-
-    <h2>Contact 📞</h2>
-    <div class="command">Have questions or want to contribute? Feel free to reach out to the creator!</div>
-    <div class="command">Email: **aayusha@example.com**</div>
+    <a href="#" class="btn">Get Started with Proxima!</a>
 </div>
+
+<footer>
+    <p>&copy; 2024 Proxima the Goat Bot | Created by Aayusha</p>
+</footer>
 
 </body>
 </html>
