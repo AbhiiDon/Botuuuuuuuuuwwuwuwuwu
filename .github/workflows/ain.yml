@@ -19,13 +19,10 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18'  # You can specify the Node.js version you want
+        node-version: '18'  # Adjust if necessary
 
     - name: Install dependencies
       run: npm install
 
-    - name: Run tests (optional, if you have tests)
-      run: npm test
-
-    - name: Build project (optional, if applicable)
-      run: npm run build
+    - name: Run the bot
+      run: npm start
