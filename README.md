@@ -1,6 +1,6 @@
-# Proxima the Goat Bot 🐐✨
+# Proxima
 
- **[Proxima the Goat Bot]**
+ **[Proxima]**
 
 **Proxima** is a powerful and multi-functional bot designed to help with group management, fun interactions, and a variety of utility commands. Whether you’re running a small community or managing a large group, Proxima is here to make your life easier by providing a wide range of features to enhance your chat experience.
 
@@ -88,9 +88,9 @@ Once Proxima is installed and configured, using it is as easy as typing a comman
    - Type `!info` to retrieve system or group information.
 
 5. **AI Assistant**:
-   - Type `!ai hello` to start a conversation with Proxima’s AI.
-   - Type `!ai [question]` to ask the AI a question.
-   - Type `!ai joke` to get a funny response from the AI.
+   - Type `!proxi hello` to start a conversation with Proxima’s AI.
+   - Type `!proxi [question]` to ask the AI a question.
+   - Type `!proxi joke` to get a funny response from the AI.
 
 ---
 
@@ -112,17 +112,14 @@ Special thanks to all contributors who have helped make Proxima better with thei
 
 Enjoy using **Proxima the Goat Bot** in your community, and feel free to explore all the powerful features it offers! 🎉
 
----
-
 ## Owner Information 👑
 
 Proxima is created and maintained by **Aayusha**, a passionate developer who loves building tools to make life easier and more fun in communities.
 
 - **Owner Name**: Aayusha Shrestha
 - **Role**: Bot Developer & Creator
-- **Location**: [Your location here]
-- **Contact**: You can reach out to me via [email@example.com](mailto:email@example.com)
-- **GitHub**: [github.com/yourprofile](https://github.com/yourprofile)
+- **Location**: [Tokyo,Japan]
+- **Contact**: You can reach out to me via [(Aashilyshrestha@clubmember.org)]
 
 If you have any questions or suggestions for Proxima, feel free to reach out to me anytime!
 
@@ -132,7 +129,7 @@ If you have any questions or suggestions for Proxima, feel free to reach out to 
 
 Check out the **owner's introduction** video where I explain more about Proxima and its features!
 
-[![Owner's Introduction Video](https://i.imgur.com/TCuQx0p.mp4)
+[![Owner's Introduction Video](https://i.imgur.com/Zma55DB.jpeg)](https://www.youtube.com/watch?v=examplelink)
 
 Click the image above to watch the video!
 
