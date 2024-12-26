@@ -2,29 +2,30 @@ name: Node.js CI
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main  # Change this to your main branch if necessary
   pull_request:
-    branches: [main]
+    branches:
+      - main  # Change this to your main branch if necessary
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'  # Adjust if necessary
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'  # You can specify the Node.js version you want
 
-      - name: Install dependencies
-        run: |
-          npm install
-          # If you want to install ytdl-core separately, you can add:
-          # npm install ytdl-core
+    - name: Install dependencies
+      run: npm install
 
-      - name: Run the bot
-        run: |
-          npm start
+    - name: Run tests (optional, if you have tests)
+      run: npm test
+
+    - name: Build project (optional, if applicable)
+      run: npm run build
