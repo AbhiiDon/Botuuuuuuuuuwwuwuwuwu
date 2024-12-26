@@ -31,20 +31,12 @@
         .feature, .command {
             opacity: 0;
             transform: translateY(50px);
-            animation: fadeIn 1s forwards;
+            transition: opacity 1s, transform 1s;
             margin: 10px 0;
         }
-        .feature:nth-child(odd), .command:nth-child(odd) {
-            animation-delay: 0.2s;
-        }
-        .feature:nth-child(even), .command:nth-child(even) {
-            animation-delay: 0.4s;
-        }
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .feature.visible, .command.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
         @keyframes bounce {
             0%, 100% {
@@ -64,7 +56,7 @@
 
 <header>
     <div>Proxima the Goat Bot 🐐✨</div>
-    <img src="https://i.imgur.com/Zma55DB.jpeg" alt="Proxima the Goat Bot">
+    <img src="https://i.imgur.com/abc123.jpg" alt="Proxima the Goat Bot">
 </header>
 
 <div class="content">
@@ -91,6 +83,24 @@
     <div class="command">Have questions or want to contribute? Feel free to reach out to the creator!</div>
     <div class="command">Email: **aayusha@example.com**</div>
 </div>
+
+<script>
+    // Create an IntersectionObserver to trigger animation when the element is in the viewport
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Stop observing after the animation is triggered
+            }
+        });
+    }, { threshold: 0.5 }); // Trigger when the element is 50% visible
+
+    // Observe each feature and command element
+    const elements = document.querySelectorAll('.feature, .command');
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+</script>
 
 </body>
 </html>
