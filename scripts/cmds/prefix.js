@@ -72,13 +72,13 @@ module.exports = {
 	},
 	onChat: async function ({ event, message, threadsData, getLang }) {
 		if (event.body && event.body.toLowerCase() === "prefix") {
-			const imageUrl = "https://i.imgur.com/yxNEy7A.gif";
+			const imageUrl = "https://i.imgur.com/ZOBVUsM.gif";
 			const prefix = await threadsData.get(event.threadID, "data.prefix") || global.GoatBot.config.prefix;
 			const musicPrefix = await threadsData.get(event.threadID, "data.musicPrefix") || "$";
 			const songLink = await threadsData.get(event.threadID, "data.songLink") || "Not set";
 			
 			const prefixInfo = `» MY PREFIX IS [${prefix}]
-» PROXIMA [V¹]`;
+» ABHI BOT 🐥💜 [V¹]`;
 			return message.reply({
 				body: prefixInfo,
 				attachment: await utils.getStreamFromURL(imageUrl)
