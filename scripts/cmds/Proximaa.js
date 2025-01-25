@@ -1,8 +1,8 @@
 module.exports = {
   config: {
-    name: "Proxima",
+    name: "Bot",
     version: "1.0",
-    author: "Aayusha",
+    author: "Abhii",
     countDown: 5,
     role: 0,
     shortDescription: "no prefix",
@@ -23,9 +23,9 @@ module.exports = {
         const replies = [
           `${name},Love me like hancock loves luffy🤍😭`,
           `Hello, ${name}! Need something from the ownner? Let me know. 🌟`,
-          ` ${name}, Kati proxima proxiima vaneko🤨`,
-          `${name}, Proxiima Heree!!`,
-          `Hi,${name}! I am developed by Miss Aayuusha Shrestha, and Luzzixy supports me as the second developer. 🤍`,
+          ` ${name}, Bol Bache 🤨`,
+          `${name}, Bot Heree!!`,
+          `Hi,${name}! I am developed by Mr Abhii. 🐥💜`,
         ];
 
         const randomReply = replies[Math.floor(Math.random() * replies.length)];
